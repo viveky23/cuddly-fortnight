@@ -1,2 +1,1 @@
-# cuddly-fortnight
-Collection of Machine Learning algorithm implementations
+# 100-days of Machine Learninga and Deep Learning in Python
