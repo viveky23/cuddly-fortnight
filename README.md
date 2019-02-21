@@ -1,5 +1,5 @@
 # 100-days of Machine Learning and Deep Learning in Python
-## Day1 : Python Practice
+## Day 1 : Python Practice
 __Read about and implemented Python classes, functions and reading csv files. Also implemented various sorting algorithms Python to practice coding in Python.__
 
 **Python classes** can be constructed using def \_\_init\_\_(self [, Arguments]) where we can also have default values for all these arguments so that if the user fails to provide these values they default to the given values. We can also declare class accessors in the class definition i.e. GerName(), GetAge() etc. which can be used to access the underlying class variables however do not allow write access to them. 
