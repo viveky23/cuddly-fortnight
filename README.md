@@ -27,4 +27,18 @@ We also need to declare \_\_str\_\_() method if we want the user to be able to p
            
 
 ## Day 2 : Python Practice
-Implementing various algorithms like insertion sort, bubble sort and merge sort in Python. Implementing Dynamic Programming problems in Python.
+__Implementing various algorithms like insertion sort, bubble sort and merge sort in Python. Implementing Dynamic Programming problems in Python.__
+
+## Day 3 : PyTorch Basics
+__Working with pyTorch basics including: tensors, autograd, basics of neural networks. Learning to train a classifier and data parallelism.__
+
+**Tensors** constructing an unitialized matrix: gets initialized to numbers in memory `torch.empty()`. Constructing a randomly initialized matrix can be done using `torch.rand()` and `torch.randn` where `rand()` creates a uniform distribution between zero and one and `randn()` creates a gaussian distribution with mean 0 and standard deviation 1.
+
+If we create a tensor based on an existing tensor `torch.zeros_like()` it copies all the properties like size and data type from the old tensor unless new values are provided by the user. The element-wise addition of two tensors with the same dimensions results in a new tensor with the same dimensions where each scalar value is the element-wise addition of the scalars in the parent tensors `(x+y)` and `torch.add(x,y,out=result)` both add two tensors while the second provides an option of storing the result in result tensor. If we use `add_` it performs in place addition. Any operation that mutates the current tensor is followed with an _ .
+1. Tensor multiplication: `torch.mm(x,y,out=result)` here and y should have agreeing dimensions.
+2. Tensor copy: `x.copy_(y)` copies the tensor y into tensor x in-place.
+3. Tensor transpose: `x.t_()` this saves the transpose of x in-place.
+
+**Broadcasting** talks about how smaller arrays broadcast across to the larger array subject to their dimensions untill they have compatible shapes. Two tensors are broadcastable if they follow the following rules:
+1. Each tensor has atleast one dimension.
+2. When iterating over dimension sizes, starting with trailing dimension, the dimension sizes must either be equal, one of them equal to one or one of them non-existent.
