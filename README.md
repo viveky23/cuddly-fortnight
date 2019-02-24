@@ -42,3 +42,5 @@ If we create a tensor based on an existing tensor `torch.zeros_like()` it copies
 **Broadcasting** talks about how smaller arrays broadcast across to the larger array subject to their dimensions untill they have compatible shapes. Two tensors are broadcastable if they follow the following rules:
 1. Each tensor has atleast one dimension.
 2. When iterating over dimension sizes, starting with trailing dimension, the dimension sizes must either be equal, one of them equal to one or one of them non-existent.
+
+**Autograd** provides automatic differentiation for all operations on tensors. If we set the attribute `.requires_grad` as  `True` then it starts to track all operations on it. Once finished computation `.backward()` helps compute all gradients automatically computes gradients. We can prevent tracking history by wrapping the code block with `torch.no_grad()`. Each  tensor has a `.grad_fn` attribute that references the function that created the tensor. `.requires_grad_(...)` changes an existing tensor's `required_grad` flag in place. The default value of the flag is zero.
