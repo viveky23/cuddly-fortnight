@@ -29,6 +29,8 @@ We also need to declare \_\_str\_\_() method if we want the user to be able to p
 ## Day 2 : Python Practice
 __Implementing various algorithms like insertion sort, bubble sort and merge sort in Python. Implementing Dynamic Programming problems in Python.__
 
+
+
 ## Day 3 : PyTorch Basics
 __Working with pyTorch basics including: tensors, autograd, basics of neural networks. Learning to train a classifier and data parallelism.__
 
